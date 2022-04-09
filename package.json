@@ -1,49 +1,49 @@
 {
-  "devDependencies": {
-    "@playwright/test": "1.20.2",
-    "@sveltejs/adapter-auto": "next",
-    "@sveltejs/kit": "next",
-    "@typescript-eslint/eslint-plugin": "5.18.0",
-    "@typescript-eslint/parser": "5.18.0",
-    "eslint": "7.32.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-svelte3": "3.4.1",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.7",
-    "prettier": "2.6.2",
-    "prettier-plugin-svelte": "2.7.0",
-    "svelte": "3.47.0",
-    "svelte-check": "2.6.0",
-    "svelte-preprocess": "4.10.5",
-    "tslib": "2.3.1",
-    "typescript": "4.6.3"
-  },
-  "lint-staged": {
-    "*.{js, ts, svelte}": [
-      "eslint --cache --fix"
-    ],
-    "*.{svelte, html, css, scss, js, ts, json, yml, yaml, md}": [
-      "prettier --write --plugin-search-dir=."
-    ]
-  },
-  "name": "my-app",
-  "prettier": {
-    "singleQuote": true,
-    "tabWidth": 4,
-    "useTabs": true
-  },
-  "scripts": {
-    "build": "svelte-kit build",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "dev": "svelte-kit dev",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "package": "svelte-kit package",
-    "prepare": "svelte-kit sync && husky install",
-    "preview": "svelte-kit preview",
-    "test": "playwright test"
-  },
-  "type": "module",
-  "version": "0.0.1"
+	"devDependencies": {
+		"@playwright/test": "1.20.2",
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@typescript-eslint/eslint-plugin": "5.18.0",
+		"@typescript-eslint/parser": "5.18.0",
+		"eslint": "7.32.0",
+		"eslint-config-prettier": "8.5.0",
+		"eslint-plugin-svelte3": "3.4.1",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.3.7",
+		"prettier": "2.6.2",
+		"prettier-plugin-svelte": "2.7.0",
+		"svelte": "3.47.0",
+		"svelte-check": "2.6.0",
+		"svelte-preprocess": "4.10.5",
+		"tslib": "2.3.1",
+		"typescript": "4.6.3"
+	},
+	"lint-staged": {
+		"*.{js, ts, svelte}": [
+			"eslint --cache --fix"
+		],
+		"*.{svelte, html, css, scss, js, ts, json, yml, yaml, md}": [
+			"prettier --write --plugin-search-dir=."
+		]
+	},
+	"name": "my-app",
+	"prettier": {
+		"singleQuote": true,
+		"tabWidth": 4,
+		"useTabs": true
+	},
+	"scripts": {
+		"build": "svelte-kit build",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"dev": "svelte-kit dev",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"package": "svelte-kit package",
+		"prepare": "svelte-kit sync && husky install",
+		"preview": "svelte-kit preview",
+		"test": "playwright test"
+	},
+	"type": "module",
+	"version": "0.0.1"
 }
