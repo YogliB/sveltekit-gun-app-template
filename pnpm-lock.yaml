@@ -1,21 +1,21 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@playwright/test': ^1.20.0
+  '@playwright/test': 1.20.2
   '@sveltejs/adapter-auto': next
   '@sveltejs/kit': next
-  '@typescript-eslint/eslint-plugin': ^5.10.1
-  '@typescript-eslint/parser': ^5.10.1
-  eslint: ^7.32.0
-  eslint-config-prettier: ^8.3.0
-  eslint-plugin-svelte3: ^3.2.1
-  prettier: ^2.5.1
-  prettier-plugin-svelte: ^2.5.0
-  svelte: ^3.44.0
-  svelte-check: ^2.2.6
-  svelte-preprocess: ^4.10.1
-  tslib: ^2.3.1
-  typescript: ~4.6.2
+  '@typescript-eslint/eslint-plugin': 5.18.0
+  '@typescript-eslint/parser': 5.18.0
+  eslint: 7.32.0
+  eslint-config-prettier: 8.5.0
+  eslint-plugin-svelte3: 3.4.1
+  prettier: 2.6.2
+  prettier-plugin-svelte: 2.7.0
+  svelte: 3.47.0
+  svelte-check: 2.6.0
+  svelte-preprocess: 4.10.5
+  tslib: 2.3.1
+  typescript: 4.6.3
 
 devDependencies:
   '@playwright/test': 1.20.2
@@ -68,7 +68,7 @@ packages:
       '@babel/traverse': 7.17.9
       '@babel/types': 7.17.0
       convert-source-map: 1.8.0
-      debug: 4.3.3
+      debug: 4.3.4
       gensync: 1.0.0-beta.2
       json5: 2.2.1
       semver: 6.3.0
@@ -540,7 +540,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.16.7
       '@babel/parser': 7.17.9
       '@babel/types': 7.17.0
-      debug: 4.3.3
+      debug: 4.3.4
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -945,7 +945,7 @@ packages:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
     dependencies:
-      debug: 4.3.3
+      debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1655,7 +1655,7 @@ packages:
     engines: {node: '>= 10.17.0'}
     hasBin: true
     dependencies:
-      debug: 4.3.3
+      debug: 4.3.4
       get-stream: 5.2.0
       yauzl: 2.10.0
     optionalDependencies:
@@ -1778,7 +1778,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.4
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true
@@ -1846,7 +1846,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.3
+      debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2504,7 +2504,7 @@ packages:
     engines: {node: '>= 10'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.3
+      debug: 4.3.4
       socks: 2.6.2
     transitivePeerDependencies:
       - supports-color
