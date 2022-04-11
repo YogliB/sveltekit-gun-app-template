@@ -16,7 +16,9 @@
 		"svelte-check": "2.6.0",
 		"svelte-preprocess": "4.10.5",
 		"tslib": "2.3.1",
-		"typescript": "4.6.3"
+		"typescript": "4.6.3",
+		"vite-plugin-windicss": "^1.8.3",
+		"windicss": "^3.5.1"
 	},
 	"lint-staged": {
 		"*.{js, ts, svelte}": [
