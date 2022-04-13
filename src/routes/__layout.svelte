@@ -4,3 +4,5 @@
 
 	if (browser) import('virtual:windi-devtools');
 </script>
+
+<slot />
