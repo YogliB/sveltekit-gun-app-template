@@ -1,20 +1,13 @@
-# create-svelte
+# sveltekit-app-template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) with some spice on top 🌶️
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
+- [WindiCSS](https://windicss.org/) support
+- [TypeScript](https://typescriptlang.org/) support
+- Client-Side logging via [Sentry](https://sentry.io/)
+- [Storybook](https://storybook.js.org/docs/svelte/get-started/introduction)
 
 ## Developing
 
