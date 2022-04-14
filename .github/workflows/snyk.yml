@@ -4,7 +4,23 @@ jobs:
     security:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@master
+            - name: Checkout
+              uses: actions/checkout@v3
+
+            - name: Cache pnpm modules
+              uses: actions/cache@v3
+              with:
+                  path: ~/.pnpm-store
+                  key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+                  restore-keys: |
+                      ${{ runner.os }}-
+
+            - name: Install dependencies
+              uses: pnpm/action-setup@v2.2.1
+              with:
+                  version: ^6.0.0
+                  run_install: true
+
             - name: Run Snyk to check for vulnerabilities
               uses: snyk/actions/node@master
               env:
