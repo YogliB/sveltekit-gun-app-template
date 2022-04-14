@@ -1,4 +1,9 @@
 {
+	"dependencies": {
+		"@sentry/browser": "^6.19.6",
+		"@sentry/node": "^6.19.6",
+		"@sentry/tracing": "^6.19.6"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.17.9",
 		"@playwright/test": "next",
@@ -54,17 +59,13 @@
 		"package": "svelte-kit package",
 		"prepare": "svelte-kit sync && husky install && npx playwright install",
 		"preview": "svelte-kit preview",
-		"test": "playwright test",
-		"storybook": "start-storybook -p 6006",
-		"build-storybook": "build-storybook"
+		"storybook:build": "build-storybook",
+		"storybook:start": "start-storybook -p 6006",
+		"test": "playwright test"
 	},
 	"type": "module",
 	"version": "0.0.1",
 	"volta": {
 		"node": "16.14.2"
-	},
-	"dependencies": {
-		"@sentry/browser": "^6.19.6",
-		"@sentry/tracing": "^6.19.6"
 	}
 }

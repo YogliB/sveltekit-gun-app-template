@@ -1,18 +1,12 @@
-<script lang="ts">
-	import 'virtual:windi.css';
-	import { onMount } from 'svelte';
+<script context="module">
 	import { browser } from '$app/env';
+	import { initSentryBrowser, initWindiDevTools } from '$lib/helpers';
+	import 'virtual:windi.css';
 
-	let Sentry;
-
-	onMount(async () => {
-		if (browser) {
-			import('virtual:windi-devtools');
-			Sentry = (await import('@sentry/browser')).default;
-
-			Sentry.init({});
-		}
-	});
+	if (browser) {
+		initSentryBrowser({ dsn: import.meta.env.VITE_SENTRY_DSN });
+		initWindiDevTools();
+	}
 </script>
 
 <slot />
