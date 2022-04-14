@@ -1,4 +1,4 @@
-# sveltekit-app-template
+# sveltekit-app-template - WIP 👷‍♂️
 
 A highly-opiniated SvelteKit template, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) with some spice on top 🌶️
 
@@ -8,6 +8,7 @@ A highly-opiniated SvelteKit template, powered by [`create-svelte`](https://gith
 -   [TypeScript](https://typescriptlang.org/) support
 -   Client-Side logging via [Sentry](https://sentry.io/)
 -   [Storybook](https://storybook.js.org/docs/svelte/get-started/introduction)
+-   Predifined [Github actions](https://github.com/YogliB/sveltekit-app-template/tree/main/.github/workflows)
 
 ## Developing
 
