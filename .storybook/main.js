@@ -1,3 +1,5 @@
+const sveltePreprocess = require('svelte-preprocess');
+
 module.exports = {
 	stories: [
 		'../src/**/*.stories.mdx',
@@ -6,6 +8,6 @@ module.exports = {
 	addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
 	framework: '@storybook/svelte',
 	svelteOptions: {
-		preprocess: import('../svelte.config.js').preprocess,
+		preprocess: sveltePreprocess(),
 	},
 };
