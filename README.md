@@ -1,6 +1,6 @@
 # sveltekit-app-template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) with some spice on top 🌶️
+A highly-opiniated SvelteKit template, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) with some spice on top 🌶️
 
 ## Features
 
