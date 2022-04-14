@@ -1,4 +1,4 @@
-# sveltekit-app-template
+# sveltekit-app-template - WIP 👷‍♂️
 
 A highly-opiniated SvelteKit template, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte) with some spice on top 🌶️
 
