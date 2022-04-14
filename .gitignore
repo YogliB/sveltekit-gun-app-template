@@ -1,5 +1,4 @@
 *.log
-.env.development
 .eslintcache
 .svelte-kit
 node_modules
