@@ -24,6 +24,7 @@ specifiers:
   eslint-config-prettier: 8.5.0
   eslint-plugin-storybook: ^0.5.8
   eslint-plugin-svelte3: 3.4.1
+  gun: ^0.2020.1236
   husky: ^7.0.4
   lint-staged: ^12.3.7
   prettier: 2.6.2
@@ -43,10 +44,11 @@ dependencies:
   '@fortawesome/free-solid-svg-icons': 6.1.1
   '@sentry/browser': 6.19.6
   '@sentry/tracing': 6.19.6
+  gun: 0.2020.1236
 
 devDependencies:
   '@babel/core': 7.17.9
-  '@playwright/test': 1.22.0-alpha-apr-14-2022
+  '@playwright/test': 1.22.0-alpha-apr-16-2022
   '@storybook/addon-actions': 6.4.21
   '@storybook/addon-essentials': 6.4.21_e4fe74cbf5b34883bce73d9cdbc802fd
   '@storybook/addon-links': 6.4.21
@@ -55,7 +57,7 @@ devDependencies:
   '@storybook/manager-webpack4': 6.4.21_eslint@7.32.0+typescript@4.6.3
   '@storybook/svelte': 6.4.21_a105b1bd9bc53fdfe772ab6736872f9a
   '@sveltejs/adapter-auto': 1.0.0-next.34
-  '@sveltejs/kit': 1.0.0-next.312_svelte@3.47.0
+  '@sveltejs/kit': 1.0.0-next.314_svelte@3.47.0
   '@typescript-eslint/eslint-plugin': 5.18.0_93fd1b55dafbdf76506419beaedce909
   '@typescript-eslint/parser': 5.18.0_eslint@7.32.0+typescript@4.6.3
   babel-loader: 8.2.4_@babel+core@7.17.9
@@ -2181,8 +2183,39 @@ packages:
       rimraf: 3.0.2
     dev: true
 
-  /@playwright/test/1.22.0-alpha-apr-14-2022:
-    resolution: {integrity: sha512-4Al7bqfyhBu8ORdEHRMr3JuOlXb4hTpTnDq2bRWxbIp5QVh8qx/RqiiETaZCesYZ8w7iCqm+PPdwXeJP/cbDnA==}
+  /@peculiar/asn1-schema/2.1.0:
+    resolution: {integrity: sha512-D6g4C5YRKC/iPujMAOXuZ7YGdaoMx8GsvWzfVSyx2LYeL38ECOKNywlYAuwbqQvON64lgsYdAujWQPX8hhoBLw==}
+    dependencies:
+      '@types/asn1js': 2.0.2
+      asn1js: 2.3.2
+      pvtsutils: 1.2.2
+      tslib: 2.3.1
+    dev: false
+    optional: true
+
+  /@peculiar/json-schema/1.1.12:
+    resolution: {integrity: sha512-coUfuoMeIB7B8/NMekxaDzLhaYmp0HZNPEjYRm9goRou8UZIC3z21s0sL9AWoCw4EG876QyO3kYrc61WNF9B/w==}
+    engines: {node: '>=8.0.0'}
+    dependencies:
+      tslib: 2.3.1
+    dev: false
+    optional: true
+
+  /@peculiar/webcrypto/1.3.3:
+    resolution: {integrity: sha512-+jkp16Hp18HkphJlMtqsQKjyDWJBh0AhDuoB+vVakuIRbkBdaFb7v26Ldm25altjiYhCyQnR5NChHxwSTvbXJw==}
+    engines: {node: '>=10.12.0'}
+    requiresBuild: true
+    dependencies:
+      '@peculiar/asn1-schema': 2.1.0
+      '@peculiar/json-schema': 1.1.12
+      pvtsutils: 1.2.2
+      tslib: 2.3.1
+      webcrypto-core: 1.7.3
+    dev: false
+    optional: true
+
+  /@playwright/test/1.22.0-alpha-apr-16-2022:
+    resolution: {integrity: sha512-M22LlGxeO+95JPjwU/DeHDDXldC98lJOL4ye5TUk/86P7x3lvUXJAf+W/VMttsFO+/lYtWLRulZI8mRhb6JHsg==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
@@ -2215,7 +2248,7 @@ packages:
       ms: 2.1.3
       open: 8.4.0
       pirates: 4.0.4
-      playwright-core: 1.22.0-alpha-apr-14-2022
+      playwright-core: 1.22.0-alpha-apr-16-2022
       rimraf: 3.0.2
       source-map-support: 0.4.18
       stack-utils: 2.0.5
@@ -4177,8 +4210,8 @@ packages:
       esbuild: 0.14.36
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.312_svelte@3.47.0:
-    resolution: {integrity: sha512-l07ct0FJQnt+y3/NSEBvHKDKVE/7syYQnFhCVZ6H+4LEYRtTNybFxUTC8jA3xpZwPqJLZz1X+Tt+Sa8ZMuVzDg==}
+  /@sveltejs/kit/1.0.0-next.314_svelte@3.47.0:
+    resolution: {integrity: sha512-EkXjEd30XO8+AydBLARxAtI6Ak8V0KFSEJ07sNsrkGq9J70sWPL7yGenhGaeq6S852XZAqeyWd6uGQZmQLR4Wg==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -4217,6 +4250,11 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@types/asn1js/2.0.2:
+    resolution: {integrity: sha512-t4YHCgtD+ERvH0FyxvNlYwJ2ezhqw7t+Ygh4urQ7dJER8i185JPv6oIM3ey5YQmGN6Zp9EMbpohkjZi9t3UxwA==}
+    dev: false
+    optional: true
 
   /@types/color-convert/2.0.0:
     resolution: {integrity: sha512-m7GG7IKKGuJUXvkZ1qqG3ChccdIM/qBBo913z+Xft0nKCX4hAU/IxKwZBU4cpRZ7GS5kV4vOblUkILtSShCPXQ==}
@@ -4831,6 +4869,11 @@ packages:
     engines: {node: '>= 0.12.0'}
     dev: true
 
+  /addressparser/0.3.2:
+    resolution: {integrity: sha1-WYc/Nej89sc2HBAjkmHXbhU0i7I=}
+    dev: false
+    optional: true
+
   /agent-base/6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
@@ -5122,6 +5165,14 @@ packages:
       minimalistic-assert: 1.0.1
       safer-buffer: 2.1.2
     dev: true
+
+  /asn1js/2.3.2:
+    resolution: {integrity: sha512-IYzujqcOk7fHaePpTyvD3KPAA0AjT3qZlaQAw76zmPPAV/XTjhO+tbHjbFbIQZIhw+fk9wCSfb0Z6K+JHe8Q2g==}
+    engines: {node: '>=6.0.0'}
+    dependencies:
+      pvutils: 1.1.3
+    dev: false
+    optional: true
 
   /assert/1.5.0:
     resolution: {integrity: sha512-EDsgawzwoun2CZkCgtxJbv392v4nbk9XDD06zI+kQYoBM/3RBWLlEyJARDOmhAAosBjWACEkKL6S+lIZtcAubA==}
@@ -6535,6 +6586,29 @@ packages:
       minimalistic-crypto-utils: 1.0.1
     dev: true
 
+  /emailjs-base64/1.1.4:
+    resolution: {integrity: sha512-4h0xp1jgVTnIQBHxSJWXWanNnmuc5o+k4aHEpcLXSToN8asjB5qbXAexs7+PEsUKcEyBteNYsSvXUndYT2CGGA==}
+    dev: false
+    optional: true
+
+  /emailjs-mime-codec/2.0.9:
+    resolution: {integrity: sha512-7qJo4pFGcKlWh/kCeNjmcgj34YoJWY0ekZXEHYtluWg4MVBnXqGM4CRMtZQkfYwitOhUgaKN5EQktJddi/YIDQ==}
+    dependencies:
+      emailjs-base64: 1.1.4
+      ramda: 0.26.1
+      text-encoding: 0.7.0
+    dev: false
+    optional: true
+
+  /emailjs/2.2.0:
+    resolution: {integrity: sha1-ulsj5KSwpFEPZS6HOxVOlAe2ygM=}
+    requiresBuild: true
+    dependencies:
+      addressparser: 0.3.2
+      emailjs-mime-codec: 2.0.9
+    dev: false
+    optional: true
+
   /emoji-regex/7.0.3:
     resolution: {integrity: sha512-CwBLREIQ7LvYFB0WyRvwhq5N5qPhc6PMjD6bYggFlI5YyDgl+0vxq5VHbMOFqLg7hfWzmu8T5Z1QofhmTIhItA==}
     dev: true
@@ -7897,6 +7971,19 @@ packages:
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
+
+  /gun/0.2020.1236:
+    resolution: {integrity: sha512-kTVisg8ipKvkrrcYNkH5zQXrDdMQsCeDVnYQse8loOlSsbLEAgUcD+o8XZIbsq0geY6F/3KFm64dADchInFLtg==}
+    engines: {node: '>=0.8.4'}
+    dependencies:
+      ws: 7.5.7
+    optionalDependencies:
+      '@peculiar/webcrypto': 1.3.3
+      emailjs: 2.2.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: false
 
   /handlebars/4.7.7:
     resolution: {integrity: sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==}
@@ -10115,13 +10202,6 @@ packages:
     engines: {node: '>= 6'}
     dev: true
 
-  /pixelmatch/5.2.1:
-    resolution: {integrity: sha512-WjcAdYSnKrrdDdqTcVEY7aB7UhhwjYQKYhHiBXdJef0MOaQeYpUdQ+iVyBLa5YBKS8MPVPPMX7rpOByISLpeEQ==}
-    hasBin: true
-    dependencies:
-      pngjs: 4.0.1
-    dev: true
-
   /pkg-dir/3.0.0:
     resolution: {integrity: sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==}
     engines: {node: '>=6'}
@@ -10143,8 +10223,8 @@ packages:
       find-up: 5.0.0
     dev: true
 
-  /playwright-core/1.22.0-alpha-apr-14-2022:
-    resolution: {integrity: sha512-DCmiiHNqReFn0xcSt33unJq97Qxf+BXcFGoclqD9uD9it3IjMPp4rCykobgcoViogWN9HT0iQbhxQ6ZVT+XjRA==}
+  /playwright-core/1.22.0-alpha-apr-16-2022:
+    resolution: {integrity: sha512-kMs0Iy3KxIn9oouM6AafJf8EggzIURoyksTgJUX14Lm2rmn7SQfLv0cx3V7mHdTpYW8OR0XUFQgYJ3ayy99q2Q==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
@@ -10155,7 +10235,6 @@ packages:
       https-proxy-agent: 5.0.0
       jpeg-js: 0.4.3
       mime: 3.0.0
-      pixelmatch: 5.2.1
       pngjs: 6.0.0
       progress: 2.0.3
       proper-lockfile: 4.1.2
@@ -10170,11 +10249,6 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
-    dev: true
-
-  /pngjs/4.0.1:
-    resolution: {integrity: sha512-rf5+2/ioHeQxR6IxuYNYGFytUyG3lma/WW1nsmjeHlWwtb2aByla6dkVc8pmJ9nplzkTA0q2xx7mMWrOTqT4Gg==}
-    engines: {node: '>=8.0.0'}
     dev: true
 
   /pngjs/6.0.0:
@@ -10475,6 +10549,19 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /pvtsutils/1.2.2:
+    resolution: {integrity: sha512-OALo5ZEdqiI127i64+CXwkCOyFHUA+tCQgaUO/MvRDFXWPr53f2sx28ECNztUEzuyu5xvuuD1EB/szg9mwJoGA==}
+    dependencies:
+      tslib: 2.3.1
+    dev: false
+    optional: true
+
+  /pvutils/1.1.3:
+    resolution: {integrity: sha512-pMpnA0qRdFp32b1sJl1wOJNxZLQ2cbQx+k6tjNtZ8CpvVhNqEPRgivZ2WOUev2YMajecdH7ctUPDvEe87nariQ==}
+    engines: {node: '>=6.0.0'}
+    dev: false
+    optional: true
+
   /qs/6.10.3:
     resolution: {integrity: sha512-wr7M2E0OFRfIfJZjKGieI8lBKb7fRCH4Fv5KNPEs7gJ8jadvotdsS08PzOKR7opXhZ/Xkjtt3WF9g38drmyRqQ==}
     engines: {node: '>=0.6'}
@@ -10511,6 +10598,11 @@ packages:
   /ramda/0.21.0:
     resolution: {integrity: sha1-oAGr7bP/YQd9T/HVd9RN536NCjU=}
     dev: true
+
+  /ramda/0.26.1:
+    resolution: {integrity: sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==}
+    dev: false
+    optional: true
 
   /randombytes/2.1.0:
     resolution: {integrity: sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==}
@@ -12128,6 +12220,12 @@ packages:
       minimatch: 3.1.2
     dev: true
 
+  /text-encoding/0.7.0:
+    resolution: {integrity: sha512-oJQ3f1hrOnbRLOcwKz0Liq2IcrvDeZRHXhd9RgLrsT+DjWY/nty1Hi7v3dtkaEYbPYe0mUoOfzRrMwfXXwgPUA==}
+    deprecated: no longer maintained
+    dev: false
+    optional: true
+
   /text-table/0.2.0:
     resolution: {integrity: sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=}
     dev: true
@@ -12254,7 +12352,6 @@ packages:
 
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
-    dev: true
 
   /tsutils/3.21.0_typescript@4.6.3:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
@@ -12747,6 +12844,17 @@ packages:
     resolution: {integrity: sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==}
     dev: true
 
+  /webcrypto-core/1.7.3:
+    resolution: {integrity: sha512-8TnMtwwC/hQOyvElAOJ26lJKGgcErUG02KnKS1+QhjV4mDvQetVWU1EUEeLF8ICOrdc42+GypocyBJKRqo2kQg==}
+    dependencies:
+      '@peculiar/asn1-schema': 2.1.0
+      '@peculiar/json-schema': 1.1.12
+      asn1js: 2.3.2
+      pvtsutils: 1.2.2
+      tslib: 2.3.1
+    dev: false
+    optional: true
+
   /webidl-conversions/3.0.1:
     resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
     dev: true
@@ -12959,6 +13067,19 @@ packages:
     dependencies:
       mkdirp: 0.5.6
     dev: true
+
+  /ws/7.5.7:
+    resolution: {integrity: sha512-KMvVuFzpKBuiIXW3E4u3mySRO2/mCHSyZDJQM5NQ9Q9KHWHWh0NHgfbRMLLrceUK5qAL4ytALJbpRMjixFZh8A==}
+    engines: {node: '>=8.3.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: ^5.0.2
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
 
   /ws/8.4.2:
     resolution: {integrity: sha512-Kbk4Nxyq7/ZWqr/tarI9yIt/+iNNFOjBXEWgTb4ydaNHBNGgvf2QHbS9fdfsndfjFlFwEd4Al+mw83YkaD10ZA==}
