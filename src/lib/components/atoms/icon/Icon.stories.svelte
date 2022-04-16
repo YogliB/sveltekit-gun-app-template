@@ -5,7 +5,6 @@
 	import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<!-- 👇 Creates specific parameters for the story -->
 <Meta
 	title="Components/Atoms/Icon"
 	component={Icon}
