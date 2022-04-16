@@ -1,4 +1,4 @@
-name: Check, Lint & Package
+name: Check, Lint & Build
 
 on:
     push:
@@ -38,3 +38,4 @@ jobs:
                   node-version: ${{ matrix.node-version }}
             - run: pnpm check
             - run: pnpm lint
+            - run: pnpm build
