@@ -20,6 +20,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.18.0
   '@typescript-eslint/parser': 5.18.0
   babel-loader: ^8.2.4
+  chromatic: ^6.5.4
   eslint: 7.32.0
   eslint-config-prettier: 8.5.0
   eslint-plugin-storybook: ^0.5.8
@@ -62,6 +63,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.18.0_93fd1b55dafbdf76506419beaedce909
   '@typescript-eslint/parser': 5.18.0_eslint@7.32.0+typescript@4.6.3
   babel-loader: 8.2.4_@babel+core@7.17.9
+  chromatic: 6.5.4
   eslint: 7.32.0
   eslint-config-prettier: 8.5.0_eslint@7.32.0
   eslint-plugin-storybook: 0.5.8_eslint@7.32.0+typescript@4.6.3
@@ -5790,6 +5792,11 @@ packages:
   /chownr/2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
+    dev: true
+
+  /chromatic/6.5.4:
+    resolution: {integrity: sha512-/yunI/+rdc56C6x0IhpPmdfK/DRMOvQ2hoNyAe6uuU9rdWRoAH72lYatr2NcpdsOdHGOcV5DKgIaKgVdPfUk1w==}
+    hasBin: true
     dev: true
 
   /chrome-trace-event/1.0.3:
