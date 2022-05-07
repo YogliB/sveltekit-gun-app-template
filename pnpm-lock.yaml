@@ -36,7 +36,7 @@ specifiers:
   svelte-check: 2.6.0
   svelte-loader: ^3.1.2
   svelte-preprocess: 4.10.5
-  tslib: 2.3.1
+  tslib: 2.4.0
   typescript: 4.6.3
   vite-plugin-windicss: ^1.8.4
   windicss: ^3.5.1
@@ -80,7 +80,7 @@ devDependencies:
   svelte-check: 2.6.0_c41d0477867e5b4ada3cfb73a51f73fe
   svelte-loader: 3.1.2_svelte@3.48.0
   svelte-preprocess: 4.10.5_f37fc047b92cbc632e5686167065ba08
-  tslib: 2.3.1
+  tslib: 2.4.0
   typescript: 4.6.3
   vite-plugin-windicss: 1.8.4
   windicss: 3.5.1
@@ -1902,7 +1902,7 @@ packages:
       '@peculiar/asn1-schema': 2.1.0
       '@peculiar/json-schema': 1.1.12
       pvtsutils: 1.3.2
-      tslib: 2.3.1
+      tslib: 2.4.0
       webcrypto-core: 1.7.3
     dev: false
     optional: true
@@ -6137,7 +6137,7 @@ packages:
       compute-scroll-into-view: 1.0.17
       prop-types: 15.8.1
       react-is: 17.0.2
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: true
 
   /downshift/6.1.7_react@16.14.0:
@@ -6150,7 +6150,7 @@ packages:
       prop-types: 15.8.1
       react: 16.14.0
       react-is: 17.0.2
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: true
 
   /duplexify/3.7.1:
@@ -10664,7 +10664,7 @@ packages:
   /rxjs/7.5.5:
     resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
     dependencies:
-      tslib: 2.3.1
+      tslib: 2.4.0
     dev: true
 
   /sade/1.8.1:
@@ -11698,9 +11698,6 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
-
-  /tslib/2.3.1:
-    resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
